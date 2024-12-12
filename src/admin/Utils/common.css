@@ -1,9 +1,22 @@
 .sidebar {
-  width: 200px;
+  width: 170px;
   height: 100%;
   left: 0;
-  color: white;
-  border-right: 1px solid gray;
+  border-right:1px solid black;
+  height: 165vh;
+  
+ 
+   position: sticky; 
+  /* background-size:cover; */
+  box-shadow: 0px 0px 0px 0px rgba(23, 23, 23, 0.619),inset 0px 0px 15px 1px rgba(30, 30, 30, 0.331);
+   
+      background-size: cover;
+      font-size: large;
+     
+      top: 0;
+      overflow: hidden;
+      z-index: 4;
+  
 
   @media (max-width: 768px) {
     width: 30px;
@@ -42,9 +55,17 @@
     }
   }
 }
-
+.wow{
+  font-size: 20px;
+  font-family: sans-serif;
+  
+  background: url(https://images4.alphacoders.com/985/98546.jpg);
+  -webkit-text-fill-color: transparent; 
+   -webkit-background-clip: text;
+   
+}
 .dashboard-admin {
   display: flex;
-  min-height: 80vh;
-  margin-top: 20px;
+  height: 100vh;
+  
 }

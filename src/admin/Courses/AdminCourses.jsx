@@ -101,18 +101,19 @@ const AdminCourses = ({ user }) => {
         <div className="right">
           <div className="add-course">
             <div className="course-form">
-              <h2>Add Course</h2>
+              <h2 className="h2h">Add Course</h2>
               <form onSubmit={submitHandler}>
                 <label htmlFor="text">Title</label>
                 <input
                   type="text"
+                   classname="inpt"
                   value={title}
                   onChange={(e) => setTitle(e.target.value)}
                   required
                 />
 
                 <label htmlFor="text">Description</label>
-                <input
+                <input classname="inpt"
                   type="text"
                   value={description}
                   onChange={(e) => setDescription(e.target.value)}
@@ -120,7 +121,7 @@ const AdminCourses = ({ user }) => {
                 />
 
                 <label htmlFor="text">Price</label>
-                <input
+                <input classname="inpt"
                   type="number"
                   value={price}
                   onChange={(e) => setPrice(e.target.value)}
@@ -128,7 +129,7 @@ const AdminCourses = ({ user }) => {
                 />
 
                 <label htmlFor="text">createdBy</label>
-                <input
+                <input classname="inpt"
                   type="text"
                   value={createdBy}
                   onChange={(e) => setCreatedBy(e.target.value)}
@@ -148,7 +149,7 @@ const AdminCourses = ({ user }) => {
                 </select>
 
                 <label htmlFor="text">Duration</label>
-                <input
+                <input classname="inpt"
                   type="number"
                   value={duration}
                   onChange={(e) => setDuration(e.target.value)}
@@ -161,7 +162,7 @@ const AdminCourses = ({ user }) => {
                 <button
                   type="submit"
                   disabled={btnLoading}
-                  className="common-btn"
+                  className="common-btn6"
                 >
                   {btnLoading ? "Please Wait..." : "Add"}
                 </button>

@@ -21,12 +21,12 @@ const CourseStudy = ({ user }) => {
       {course && (
         <div className="course-study-page">
           <img src={`${server}/${course.image}`} alt="" width={350} />
-          <h2>{course.title}</h2>
+          {/* <h2>{course.title}</h2>
           <h4>{course.description}</h4>
           <h5>by - {course.createdBy}</h5>
-          <h5>Duration - {course.duration} weeks</h5>
+          <h5>Duration - {course.duration} weeks</h5> */}
           <Link to={`/lectures/${course._id}`}>
-            <h2>Lectures</h2>
+            <button>LETs STUDy</button>
           </Link>
         </div>
       )}

@@ -1,16 +1,30 @@
 .about {
   padding: 80px 0;
   text-align: center;
-  min-height: 55vh;
+  min-height:10vh;
 
   .about-content {
     max-width: 800px;
     margin: 0 auto;
+    border: solid 1px black;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: #F6F8FA;
+    transition: all ease 0.5s;
 
+    
     h2 {
       font-size: 32px;
       color: #8a4baf;
       margin-bottom: 20px;
+      font-size: 30px;
+      background: url(https://images4.alphacoders.com/985/98546.jpg);
+  -webkit-text-fill-color: transparent; 
+   -webkit-background-clip: text;
+   transition: all ease 1s;
+   background-position: 100px;
+      margin-bottom: 5px;
+      font-family: sans-serif;
     }
 
     p {
@@ -18,5 +32,9 @@
       color: #333;
       line-height: 1.6;
     }
+  }
+  .about-content:hover{
+    transform: scale(30px);
+   
   }
 }

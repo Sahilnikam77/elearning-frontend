@@ -143,8 +143,8 @@ const Lecture = ({ user }) => {
                         disableRemotePlayback
                         autoPlay
                       ></video>
-                      <h1>{lecture.title}</h1>
-                      <h3>{lecture.description}</h3>
+                      <h1 className="lectitle">{lecture.title}</h1>
+                      <h3 className="lecdes">{lecture.description}</h3>
                     </>
                   ) : (
                     <h1>Please Select a Lecture</h1>
@@ -154,7 +154,7 @@ const Lecture = ({ user }) => {
             </div>
             <div className="right">
               {user && user.role === "admin" && (
-                <button className="common-btn" onClick={() => setShow(!show)}>
+                <button className="common-btn5" onClick={() => setShow(!show)}>
                   {show ? "Close" : "Add Lecture +"}
                 </button>
               )}
@@ -198,7 +198,7 @@ const Lecture = ({ user }) => {
                     <button
                       disabled={btnLoading}
                       type="submit"
-                      className="common-btn"
+                      className="common-btn7"
                     >
                       {btnLoading ? "Please Wait..." : "Add"}
                     </button>
@@ -220,11 +220,11 @@ const Lecture = ({ user }) => {
                     </div>
                     {user && user.role === "admin" && (
                       <button
-                        className="common-btn"
+                        className="common-btn6"
                         style={{ background: "red" }}
                         onClick={() => deleteHandler(e._id)}
                       >
-                        Delete {e.title}
+                        Delete 
                       </button>
                     )}
                   </>

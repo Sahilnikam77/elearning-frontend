@@ -2,7 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80vh;
+  height: 15vh;
+
   background-color: white;
 
   .auth-form {
@@ -12,11 +13,18 @@
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 300px;
+    margin-top: 400px;
+    background-color: #F6F8FA;
 
     h2 {
-      font-size: 24px;
-      color: #8a4baf;
-      margin-bottom: 15px;
+      font-size: 30px;
+      background: url(https://images4.alphacoders.com/985/98546.jpg);
+  -webkit-text-fill-color: transparent; 
+   -webkit-background-clip: text;
+   transition: all ease 1s;
+   background-position: 100px;
+      margin-bottom: 5px;
+      font-family: sans-serif;
     }
 
     form {
@@ -36,6 +44,48 @@
         border: 1px solid #ccc;
         border-radius: 5px;
       }
+      .common-btn{
+        text-decoration: none;
+    max-width: auto;
+    background: url(https://images4.alphacoders.com/985/98546.jpg);
+    color: rgb(255 255 255);
+    padding:10px;
+    width: 280px;
+    font-size: larger;
+    margin: 10px;
+    border-radius: 50%;
+    border: none;
+    text-transform: uppercase;
+    text-align: center;
+    
+    cursor: pointer;
+    transition: all 4s ease;
+    
+    border-radius: 50px;
+    &:hover,
+    &:active {
+      box-shadow: 0 2rem 2rem 0 rgb(132 144 255 / 30%);
+      box-shadow:rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+      transform: scale(1.05);
+      background: url(https://images4.alphacoders.com/985/98546.jpg);
+      background-position: 300px;
+      /* background-size: cover; */
+      color: black;
+      font-weight: 400;
+    }
+    
+    a {
+      text-decoration: none;
+      color: rgb(255 255 255);
+      font-size: 8rem;
     }
   }
-}
+  .text2{
+    text-decoration: none;
+      color: rgb(255 255 255);
+      font-size: 8rem;
+  }
+      }
+    }
+  }
+

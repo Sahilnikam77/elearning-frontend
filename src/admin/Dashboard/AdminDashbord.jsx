@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import Layout from "../Utils/Layout";
 import axios from "axios";
 import { server } from "../../main";
+import Lottie from 'lottie-react'
+import new1 from "./hiii.json"
 import "./dashboard.css";
 
 const AdminDashbord = ({ user }) => {
@@ -33,17 +35,23 @@ const AdminDashbord = ({ user }) => {
     <div>
       <Layout>
         <div className="main-content">
+          <div className="info">
+
           <div className="box">
             <p>Total Courses</p>
-            <p>{stats.totalCoures}</p>
+            <p className="no">{stats.totalCoures}</p>
           </div>
           <div className="box">
             <p>Total Lectures</p>
-            <p>{stats.totalLectures}</p>
+            <p className="no">{stats.totalLectures}</p>
           </div>
           <div className="box">
             <p>Total Users</p>
-            <p>{stats.totalUsers}</p>
+            <p className="no">{stats.totalUsers}</p>
+          </div>
+          </div>
+          <div className="gif3">
+          <Lottie animationData={new1} className='gif' loop={true}/>
           </div>
         </div>
       </Layout>

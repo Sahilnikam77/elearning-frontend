@@ -5,7 +5,7 @@ const Testimonials = () => {
   const testimonialsData = [
     {
       id: 1,
-      name: "John Doe",
+      name: "Sahil nikam",
       position: "Student",
       message:
         "This platform helped me learn so effectively. The courses are amazing and the instructors are top-notch.",
@@ -14,7 +14,7 @@ const Testimonials = () => {
     },
     {
       id: 2,
-      name: "Jane Smith",
+      name: "Chinmay kapadi",
       position: "Student",
       message:
         "I've learned more here than in any other place. The interactive lessons and quizzes make learning enjoyable.",
@@ -23,7 +23,7 @@ const Testimonials = () => {
     },
     {
       id: 3,
-      name: "John Doe",
+      name: "Krushna wagh",
       position: "Student",
       message:
         "This platform helped me learn so effectively. The courses are amazing and the instructors are top-notch.",
@@ -32,7 +32,16 @@ const Testimonials = () => {
     },
     {
       id: 4,
-      name: "Jane Smith",
+      name: "Omkar Andhere",
+      position: "Student",
+      message:
+        "I've learned more here than in any other place. The interactive lessons and quizzes make learning enjoyable.",
+      image:
+        "https://th.bing.com/th/id/OIP.GKAiW3oc2TWXVEeZAzrWOAHaJF?w=135&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+    },
+    {
+      id: 4,
+      name: "Bhaveh ughada",
       position: "Student",
       message:
         "I've learned more here than in any other place. The interactive lessons and quizzes make learning enjoyable.",
@@ -42,7 +51,8 @@ const Testimonials = () => {
   ];
   return (
     <section className="testimonials">
-      <h2>What our students say</h2>
+      <h2>WHAT's OUR STUDENT SAY</h2>
+      <div className="line1"></div>
       <div className="testmonials-cards">
         {testimonialsData.map((e) => (
           <div className="testimonial-card" key={e.id}>

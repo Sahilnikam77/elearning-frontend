@@ -1,34 +1,64 @@
+/* Styling the main course-study-page container */
 .course-study-page {
-  padding: 50px 0;
-  background-color: #f5f5f5;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 80vh;
+  width: 350px; /* Medium size */
+  margin: 20px auto; /* Center the card horizontally */
+  padding: 20px; /* Add spacing inside the card */
+  background-color: #ffffff; /* White background for contrast */
+  border: 1px solid #ddd; /* Subtle border */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  text-align: center; /* Center-align text */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+}
 
-  h2 {
-    font-size: 24px;
-    color: #8a4baf;
-    text-align: center;
-  }
+/* Hover effect for the card */
+.course-study-page:hover {
+  transform: scale(1.05); /* Slight enlargement on hover */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
 
-  h4 {
-    font-size: 21px;
-    color: #8a4baf;
-    text-align: center;
-  }
+/* Styling the course image */
+.course-study-page img {
+  width: 100%; /* Ensure the image fills the card width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Slightly round the image corners */
+  margin-bottom: 15px; /* Space below the image */
+}
 
-  h5 {
-    font-size: 20px;
-    color: #8a4baf;
-    text-align: center;
-  }
+/* Styling for the course title */
+.course-study-page h2 {
+  font-size: 1.5rem; /* Medium heading size */
+  color: #333333; /* Dark text color */
+  margin-bottom: 10px;
+}
 
-  a {
-    text-decoration: none;
-    background-color: white;
-    padding: 5px 10px;
-    border: 1px solid black;
-    border-radius: 5px;
-  }
+/* Styling for the description and other details */
+.course-study-page h4,
+.course-study-page h5 {
+  font-size: 1rem; /* Medium font size */
+  color: #666666; /* Subtle gray color */
+  margin: 5px 0;
+}
+
+/* Styling for the button */
+.course-study-page button {
+  background-color: #007bff; /* Blue button */
+  color: white; /* White text */
+  padding: 10px 20px; /* Button padding */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor for hover */
+  font-size: 1rem; /* Medium button text */
+  transition: background-color 0.3s ease;
+  width: 350px;
+}
+
+/* Hover effect for the button */
+.course-study-page button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Link styles for the button */
+.course-study-page a {
+  text-decoration: none; /* Remove underline */
 }

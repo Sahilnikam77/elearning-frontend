@@ -13,39 +13,66 @@
     width: 70%;
     padding: 10px;
     align-items: center;
-
+    border: 1px solid black;
+    margin: 20px;
+    padding: 30px;
+    box-shadow: 0px 0px 0px black,inset 0px 4px 5px rgba(0, 0, 0, 0.525);
+    background-color: #F6F8FA;
     @media (max-width: 768px) {
       width: 90%;
+    }
+
+    .lectitle {
+      border: solid 1px black; 
+      /* background-color: rgb(252, 223, 223); */
+      background: url(https://images4.alphacoders.com/985/98546.jpg);
+      box-shadow: 0px 0px 0px black,inset 0px 4px 5px rgba(0, 0, 0, 0.525);
+    
+    }
+    .lecdes {
+      font-size: 20px;
+      border: solid 1px black; 
+      /* background-color: rgb(252, 223, 223); */
+       background-color: white;
     }
   }
 
   .right {
     width: 30%;
-
+    border: 0.5px solid black;
+    margin: 20px;
+    box-shadow: 0px, 2px, 4px, rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 30px;
+    background-color: #F6F8FA;
+    box-shadow: 0px 0px 0px black,inset 0px 4px 5px rgba(0, 0, 0, 0.525);
+    
     .lecture-form {
       background-color: #fff;
       padding: 30px;
       border-radius: 10px;
+      border: solid 1px;
+      padding: 5px;
       box-shadow: 0px, 2px, 4px, rgba(0, 0, 0, 0.1);
       text-align: center;
       width: auto;
 
       h2 {
         font-size: 24px;
-        color: #8a4baf;
+        color: #0d0b0e;
         margin-bottom: 15px;
       }
 
       form {
         text-align: left;
-
+        box-shadow: 0px, 2px, 4px, rgba(0, 0, 0, 0.354);
         label {
           display: block;
           margin-bottom: 5px;
           font-size: 14px;
           color: #333;
+          
         }
-
         input {
           width: 92%;
           padding: 10px;
@@ -55,30 +82,93 @@
         }
       }
     }
-
+    
     @media (max-width: 768px) {
       width: 80%;
       margin-bottom: 10px;
     }
-
+    
     .lecture-number {
-      background-color: #fff;
+      background: url(https://images4.alphacoders.com/985/98546.jpg);
       padding: 10px;
       border: 1px solid black;
       margin-top: 10px;
       border-radius: 5px;
+      color: #fff;
       text-align: center;
+      box-shadow: 0px 0px 0px black,inset 0px 4px 5px rgba(0, 0, 0, 0.525);
+    
       cursor: pointer;
-
+      
       &:hover {
-        background-color: #8a4baf;
+        background-color: #72d6fb;
         color: white;
       }
     }
-
+    
     .active {
-      background-color: #8a4baf;
+      background-color: #82fb72;
       color: white;
     }
   }
+}
+.common-btn6{
+  text-decoration: none;
+    max-width: auto;
+    background: url(https://images4.alphacoders.com/985/98546.jpg);
+    color: rgb(255 255 255);
+    padding:10px;
+    width: 200px;
+    font-size: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    text-transform: uppercase;
+    text-align: center;
+    
+    cursor: pointer;
+    transition: all 2s ease;
+    
+    border-radius: 50px;
+
+}
+.common-btn5{
+  text-decoration: none;
+    max-width: auto;
+    background: url(https://images4.alphacoders.com/985/98546.jpg);
+    color: rgb(255 255 255);
+    padding:10px;
+    width: 250px;
+    font-size: larger;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    text-transform: uppercase;
+    text-align: center;
+    
+    cursor: pointer;
+    transition: all 2s ease;
+    
+    border-radius: 50px;
+
+}
+.common-btn7{
+  text-decoration: none;
+    max-width: auto;
+    background: url(https://images4.alphacoders.com/985/98546.jpg);
+    color: rgb(255 255 255);
+    padding:10px;
+    width: 300px;
+    font-size: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    text-transform: uppercase;
+    text-align: center;
+    
+    cursor: pointer;
+    transition: all 2s ease;
+    
+    border-radius: 50px;
+
 }

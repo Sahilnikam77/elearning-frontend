@@ -8,7 +8,7 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <ul>
-        <li>
+        <li className="wow">
           <Link to={"/admin/dashboard"}>
             <div className="icon">
               <AiFillHome />
@@ -17,7 +17,7 @@ const Sidebar = () => {
           </Link>
         </li>
 
-        <li>
+        <li className="wow">
           <Link to={"/admin/course"}>
             <div className="icon">
               <FaBook />
@@ -26,7 +26,7 @@ const Sidebar = () => {
           </Link>
         </li>
 
-        <li>
+        <li className="wow">
           <Link to={"/admin/users"}>
             <div className="icon">
               <FaUserAlt />
@@ -35,7 +35,7 @@ const Sidebar = () => {
           </Link>
         </li>
 
-        <li>
+        <li className="wow">
           <Link to={"/account"}>
             <div className="icon">
               <AiOutlineLogout />

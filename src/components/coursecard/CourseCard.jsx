@@ -30,9 +30,14 @@ const CourseCard = ({ course }) => {
     }
   };
   return (
+    
     <div className="course-card">
+      
       <img src={`${server}/${course.image}`} alt="" className="course-image" />
+      <div className="title">
+
       <h3>{course.title}</h3>
+      </div>
       <p>Instructor- {course.createdBy}</p>
       <p>Duration- {course.duration} weeks</p>
       <p>Price- ₹{course.price}</p>
@@ -43,14 +48,14 @@ const CourseCard = ({ course }) => {
               {user.subscription.includes(course._id) ? (
                 <button
                   onClick={() => navigate(`/course/study/${course._id}`)}
-                  className="common-btn"
+                  className="common-btn5"
                 >
                   Study
                 </button>
               ) : (
                 <button
                   onClick={() => navigate(`/course/${course._id}`)}
-                  className="common-btn"
+                  className="common-btn5"
                 >
                   Get Started
                 </button>
@@ -59,14 +64,14 @@ const CourseCard = ({ course }) => {
           ) : (
             <button
               onClick={() => navigate(`/course/study/${course._id}`)}
-              className="common-btn"
+              className="common-btn5"
             >
               Study
             </button>
           )}
         </>
       ) : (
-        <button onClick={() => navigate("/login")} className="common-btn">
+        <button onClick={() => navigate("/login")} className="common-btn5">
           Get Started
         </button>
       )}
@@ -76,7 +81,7 @@ const CourseCard = ({ course }) => {
       {user && user.role === "admin" && (
         <button
           onClick={() => deleteHandler(course._id)}
-          className="common-btn"
+          className="common-btn5"
           style={{ background: "red" }}
         >
           Delete
